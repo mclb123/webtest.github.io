@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Brydon McLeod">
+
+<title>A quick webtest of quarto (with R)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="test_q2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="test_q2_files/libs/quarto-html/quarto.js"></script>
+<script src="test_q2_files/libs/quarto-html/popper.min.js"></script>
+<script src="test_q2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="test_q2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="test_q2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="test_q2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="test_q2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="test_q2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="test_q2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="test_q2_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="test_q2_files/libs/d3-4.13.0/d3.min.js"></script>
+<script src="test_q2_files/libs/d3-tip-0.8.1/index.js"></script>
+<link href="test_q2_files/libs/chorddiag-0.1.2.9000/chorddiag.css" rel="stylesheet">
+<script src="test_q2_files/libs/chorddiag-0.1.2.9000/chorddiag.js"></script>
+<script src="test_q2_files/libs/plotly-binding-4.10.2/plotly.js"></script>
+<script src="test_q2_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="test_q2_files/libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="test_q2_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="test_q2_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="test_q2_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="test_q2_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">A quick webtest of quarto (with R)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Brydon McLeod </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="testing-an-online-report" class="level1">
+<h1>Testing an online report</h1>
+<p>Testing a virtual report. Potentially works.</p>
+<section id="testing-figures-cord-chart" class="level2">
+<h2 class="anchored" data-anchor-id="testing-figures-cord-chart">Testing figures: Cord chart</h2>
+<p>Example chort chart.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="chorddiag html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2f727b67205fab6fcbb3" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-2f727b67205fab6fcbb3">{"x":{"matrix":[[11975,5871,8916,2868],[1951,10048,2060,6171],[8010,16145,8090,8045],[1013,990,940,6907]],"options":{"type":"directional","width":null,"height":null,"margin":100,"showGroupnames":true,"groupNames":["black","blonde","brown","red"],"groupColors":["#000000","#FFDD89","#957244","#F26223"],"groupThickness":0.1,"groupPadding":0.03490658503988659,"groupnamePadding":[20,20,20,20],"groupnameFontsize":18,"groupedgeColor":null,"chordedgeColor":"#808080","categoryNames":null,"categorynamePadding":100,"categorynameFontsize":28,"showTicks":true,"tickInterval":1000,"ticklabelFontsize":10,"fadeLevel":0.1,"showTooltips":true,"showZeroTooltips":true,"tooltipNames":["black","blonde","brown","red"],"tooltipFontsize":12,"tooltipUnit":"","tooltipGroupConnector":" &#x25B6; ","precision":"null","clickAction":null,"clickGroupAction":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="testing-figures-map" class="level2">
+<h2 class="anchored" data-anchor-id="testing-figures-map">Testing figures: map</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-f1c815577299e64d1b3d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f1c815577299e64d1b3d">{"x":{"data":[{"x":[4910.4167559999996,3008.6473550000001,1029.161251,3214.857818,743.38703680000003,556.10326510000004,1783.432873,1109.3743380000001,1133.98495,1172.6030470000001,795.75728200000003,3259.1789779999999,2517.736547,3081.7610220000001,2785.4935820000001,958.5668124,505.75380769999998,556.80838340000003,21745.573280000001,884.75525070000003,993.22395710000001,874.68586430000005,764.72596280000005,1267.613204,745.36954079999998,640.32243830000004,21951.211759999998,1544.228586,663.22367659999998,686.3952693,1497.492223,3710.9829629999999,2370.619976,502.31973340000002,3876.4859580000002,808.89707280000005,1981.951806,4319.804067,670.08060109999997,1737.561657,1561.7691159999999,1348.285159,1450.9925129999999,8028.6514390000002,2202.9884229999998,3781.4106179999999,962.49229319999995,1532.776998,3120.8768110000001,843.73313719999999,1588.6882989999999,685.58768210000005],"y":[58.014000000000003,39.482999999999997,49.189999999999998,59.319000000000003,46.137,45.909999999999997,49.354999999999997,46.774999999999999,47.383000000000003,50.939,47.804000000000002,55.625,52.374000000000002,46.518999999999998,53.319000000000003,42.024000000000001,44.534999999999997,44.509999999999998,52.789999999999999,41.841999999999999,51.756,40.762,37.465000000000003,56.155000000000001,52.207999999999998,43.764000000000003,57.442,46.881,43.767000000000003,41.713999999999999,50.851999999999997,64.930000000000007,55.729999999999997,42.494999999999997,56.436999999999998,41.290999999999997,44.514000000000003,67.063999999999993,45,58.549999999999997,48.878999999999998,36.787999999999997,41.973999999999997,55.527000000000001,47.799999999999997,52.536999999999999,49.918999999999997,52.887,59.837000000000003,50.350000000000001,51.386000000000003,57.673999999999999],"text":["gdpPercap:  4910.4168<br />lifeExp: 58.01400<br />pop:  17152804<br />continent: Africa","gdpPercap:  3008.6474<br />lifeExp: 39.48300<br />pop:   6162675<br />continent: Africa","gdpPercap:  1029.1613<br />lifeExp: 49.19000<br />pop:   3168267<br />continent: Africa","gdpPercap:  3214.8578<br />lifeExp: 59.31900<br />pop:    781472<br />continent: Africa","gdpPercap:   743.3870<br />lifeExp: 46.13700<br />pop:   5889574<br />continent: Africa","gdpPercap:   556.1033<br />lifeExp: 45.91000<br />pop:   3834415<br />continent: Africa","gdpPercap:  1783.4329<br />lifeExp: 49.35500<br />pop:   7959865<br />continent: Africa","gdpPercap:  1109.3743<br />lifeExp: 46.77500<br />pop:   2167533<br />continent: Africa","gdpPercap:  1133.9850<br />lifeExp: 47.38300<br />pop:   4388260<br />continent: Africa","gdpPercap:  1172.6030<br />lifeExp: 50.93900<br />pop:    304739<br />continent: Africa","gdpPercap:   795.7573<br />lifeExp: 47.80400<br />pop:  26480870<br />continent: Africa","gdpPercap:  3259.1790<br />lifeExp: 55.62500<br />pop:   1536769<br />continent: Africa","gdpPercap:  2517.7365<br />lifeExp: 52.37400<br />pop:   7459574<br />continent: Africa","gdpPercap:  3081.7610<br />lifeExp: 46.51900<br />pop:    228694<br />continent: Africa","gdpPercap:  2785.4936<br />lifeExp: 53.31900<br />pop:  38783863<br />continent: Africa","gdpPercap:   958.5668<br />lifeExp: 42.02400<br />pop:    192675<br />continent: Africa","gdpPercap:   505.7538<br />lifeExp: 44.53500<br />pop:   2512642<br />continent: Africa","gdpPercap:   556.8084<br />lifeExp: 44.51000<br />pop:  34617799<br />continent: Africa","gdpPercap: 21745.5733<br />lifeExp: 52.79000<br />pop:    706367<br />continent: Africa","gdpPercap:   884.7553<br />lifeExp: 41.84200<br />pop:    608274<br />continent: Africa","gdpPercap:   993.2240<br />lifeExp: 51.75600<br />pop:  10538093<br />continent: Africa","gdpPercap:   874.6859<br />lifeExp: 40.76200<br />pop:   4227026<br />continent: Africa","gdpPercap:   764.7260<br />lifeExp: 37.46500<br />pop:    745228<br />continent: Africa","gdpPercap:  1267.6132<br />lifeExp: 56.15500<br />pop:  14500404<br />continent: Africa","gdpPercap:   745.3695<br />lifeExp: 52.20800<br />pop:   1251524<br />continent: Africa","gdpPercap:   640.3224<br />lifeExp: 43.76400<br />pop:   1703617<br />continent: Africa","gdpPercap: 21951.2118<br />lifeExp: 57.44200<br />pop:   2721783<br />continent: Africa","gdpPercap:  1544.2286<br />lifeExp: 46.88100<br />pop:   8007166<br />continent: Africa","gdpPercap:   663.2237<br />lifeExp: 43.76700<br />pop:   5637246<br />continent: Africa","gdpPercap:   686.3953<br />lifeExp: 41.71400<br />pop:   6491649<br />continent: Africa","gdpPercap:  1497.4922<br />lifeExp: 50.85200<br />pop:   1456688<br />continent: Africa","gdpPercap:  3710.9830<br />lifeExp: 64.93000<br />pop:    913025<br />continent: Africa","gdpPercap:  2370.6200<br />lifeExp: 55.73000<br />pop:  18396941<br />continent: Africa","gdpPercap:   502.3197<br />lifeExp: 42.49500<br />pop:  11127868<br />continent: Africa","gdpPercap:  3876.4860<br />lifeExp: 56.43700<br />pop:    977026<br />continent: Africa","gdpPercap:   808.8971<br />lifeExp: 41.29100<br />pop:   5682086<br />continent: Africa","gdpPercap:  1981.9518<br />lifeExp: 44.51400<br />pop:  62209173<br />continent: Africa","gdpPercap:  4319.8041<br />lifeExp: 67.06400<br />pop:    492095<br />continent: Africa","gdpPercap:   670.0806<br />lifeExp: 45.00000<br />pop:   4657072<br />continent: Africa","gdpPercap:  1737.5617<br />lifeExp: 58.55000<br />pop:     86796<br />continent: Africa","gdpPercap:  1561.7691<br />lifeExp: 48.87900<br />pop:   5260855<br />continent: Africa","gdpPercap:  1348.2852<br />lifeExp: 36.78800<br />pop:   3140897<br />continent: Africa","gdpPercap:  1450.9925<br />lifeExp: 41.97400<br />pop:   4353666<br />continent: Africa","gdpPercap:  8028.6514<br />lifeExp: 55.52700<br />pop:  27129932<br />continent: Africa","gdpPercap:  2202.9884<br />lifeExp: 47.80000<br />pop:  17104986<br />continent: Africa","gdpPercap:  3781.4106<br />lifeExp: 52.53700<br />pop:    551425<br />continent: Africa","gdpPercap:   962.4923<br />lifeExp: 49.91900<br />pop:  17129565<br />continent: Africa","gdpPercap:  1532.7770<br />lifeExp: 52.88700<br />pop:   2308582<br />continent: Africa","gdpPercap:  3120.8768<br />lifeExp: 59.83700<br />pop:   6005061<br />continent: Africa","gdpPercap:   843.7331<br />lifeExp: 50.35000<br />pop:  11457758<br />continent: Africa","gdpPercap:  1588.6883<br />lifeExp: 51.38600<br />pop:   5216550<br />continent: Africa","gdpPercap:   685.5877<br />lifeExp: 57.67400<br />pop:   6642107<br />continent: Africa"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(248,118,109,1)","opacity":1,"size":[6.3212778153070239,5.2961289912163227,4.8595827437131582,4.2923394076110135,5.2616527249849092,4.9706176719429482,5.5059176412168007,4.6670421435691178,5.0555991785577055,4.0667632255419175,6.9404956993214642,4.5204058361064545,5.4501660460398771,4.0112963956288503,7.6069458524637428,3.9797311297518356,4.7378210032954842,7.3950536522444557,4.2638253013310488,4.2238363428963783,5.7686064034798274,5.0314549386457292,4.2787824962484313,6.1154222352968306,4.443544503048094,4.5618717717239408,4.7782760635759374,5.5110959072837229,5.2290702183890518,5.3366454219230999,4.4996561739379111,4.3387918889423229,6.4122967997437872,5.8239588742469062,4.3600486681923751,5.2349135957595925,8.6289602523235072,4.1712285494814765,5.094867832229613,3.7795275590551185,5.1790587822621754,4.8547754544520023,5.050457494604438,6.9791256551244674,6.3177143963955897,4.1989194799828917,6.3195466589572602,4.696630352949855,5.2763287061726381,5.8542762902499925,5.1730538700011666,5.3548285776658719],"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)"}},"hoveron":"points","name":"Africa","legendgroup":"Africa","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[10079.026739999999,3548.0978319999999,6660.1186539999999,22090.88306,4756.7638360000001,3815.8078700000001,5926.8769670000001,6380.4949660000002,2681.9888999999998,6679.6232600000003,5138.9223739999998,4879.9927479999997,1874.298931,3203.2080660000001,6650.195573,7674.9291080000003,5486.3710890000002,5351.9121439999999,3248.3733109999998,6281.2908550000002,9770.5249210000002,7899.5542089999999,24072.632130000002,6504.3396629999997,13143.95095],"y":[68.480999999999995,50.023000000000003,61.488999999999997,74.209999999999994,67.052000000000007,63.837000000000003,70.75,72.649000000000001,61.787999999999997,61.310000000000002,56.695999999999998,56.029000000000003,49.923000000000002,57.402000000000001,70.109999999999999,65.031999999999996,57.469999999999999,68.680999999999997,66.352999999999994,58.447000000000003,73.439999999999998,68.299999999999997,73.379999999999995,69.480999999999995,67.456000000000003],"text":["gdpPercap: 10079.0267<br />lifeExp: 68.48100<br />pop:  26983828<br />continent: Americas","gdpPercap:  3548.0978<br />lifeExp: 50.02300<br />pop:   5079716<br />continent: Americas","gdpPercap:  6660.1187<br />lifeExp: 61.48900<br />pop: 114313951<br />continent: Americas","gdpPercap: 22090.8831<br />lifeExp: 74.21000<br />pop:  23796400<br />continent: Americas","gdpPercap:  4756.7638<br />lifeExp: 67.05200<br />pop:  10599793<br />continent: Americas","gdpPercap:  3815.8079<br />lifeExp: 63.83700<br />pop:  25094412<br />continent: Americas","gdpPercap:  5926.8770<br />lifeExp: 70.75000<br />pop:   2108457<br />continent: Americas","gdpPercap:  6380.4950<br />lifeExp: 72.64900<br />pop:   9537988<br />continent: Americas","gdpPercap:  2681.9889<br />lifeExp: 61.78800<br />pop:   5302800<br />continent: Americas","gdpPercap:  6679.6233<br />lifeExp: 61.31000<br />pop:   7278866<br />continent: Americas","gdpPercap:  5138.9224<br />lifeExp: 56.69600<br />pop:   4282586<br />continent: Americas","gdpPercap:  4879.9927<br />lifeExp: 56.02900<br />pop:   5703430<br />continent: Americas","gdpPercap:  1874.2989<br />lifeExp: 49.92300<br />pop:   4908554<br />continent: Americas","gdpPercap:  3203.2081<br />lifeExp: 57.40200<br />pop:   3055235<br />continent: Americas","gdpPercap:  6650.1956<br />lifeExp: 70.11000<br />pop:   2156814<br />continent: Americas","gdpPercap:  7674.9291<br />lifeExp: 65.03200<br />pop:  63759976<br />continent: Americas","gdpPercap:  5486.3711<br />lifeExp: 57.47000<br />pop:   2554598<br />continent: Americas","gdpPercap:  5351.9121<br />lifeExp: 68.68100<br />pop:   1839782<br />continent: Americas","gdpPercap:  3248.3733<br />lifeExp: 66.35300<br />pop:   2984494<br />continent: Americas","gdpPercap:  6281.2909<br />lifeExp: 58.44700<br />pop:  15990099<br />continent: Americas","gdpPercap:  9770.5249<br />lifeExp: 73.44000<br />pop:   3080828<br />continent: Americas","gdpPercap:  7899.5542<br />lifeExp: 68.30000<br />pop:   1039009<br />continent: Americas","gdpPercap: 24072.6321<br />lifeExp: 73.38000<br />pop: 220239000<br />continent: Americas","gdpPercap:  6504.3397<br />lifeExp: 69.48100<br />pop:   2873520<br />continent: Americas","gdpPercap: 13143.9510<br />lifeExp: 67.45600<br />pop:  13503563<br />continent: Americas"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(163,165,0,1)","opacity":1,"size":[6.9704708306852163,5.1543423864008622,10.355372798445526,6.7754395676957646,5.7744691000744357,6.8563543578967527,4.6543523268365288,5.6710443310912968,5.1847201830209233,5.4295652186159336,5.039827092109304,5.2376868382273321,5.1305719178396894,4.8395888300281875,4.6647531583470379,8.6891169708345828,4.746072516696378,4.5941495455001427,4.8268814828686635,6.2331660182646145,4.8441487892900108,4.3799182594782948,12.908637187316197,4.8066302865732142,6.0332002516360639],"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)"}},"hoveron":"points","name":"Americas","legendgroup":"Americas","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[786.11335999999994,19340.10196,659.87723219999998,524.97218320000002,741.23746989999995,11186.141250000001,813.33732299999997,1382.7020560000001,11888.595079999999,14688.235070000001,13306.619210000001,16610.37701,2852.351568,4106.3012490000001,4657.22102,59265.477140000003,8659.6968359999992,3827.9215709999999,1647.511665,371,694.11243979999995,11848.343919999999,1175.9211929999999,2373.204287,34167.762600000002,11210.089480000001,1348.7756509999999,3195.484582,5596.5198259999997,1961.224635,713.53711959999998,3682.831494,1829.765177],"y":[38.438000000000002,65.593000000000004,46.923000000000002,31.219999999999999,63.967359999999999,73.599999999999994,54.207999999999998,52.701999999999998,57.701999999999998,60.412999999999997,73.060000000000002,75.379999999999995,61.134,67.159000000000006,64.766000000000005,69.343000000000004,66.099000000000004,65.256,55.491,56.058999999999997,46.747999999999998,57.366999999999997,54.042999999999999,60.060000000000002,58.689999999999998,70.795000000000002,65.948999999999998,61.195,70.590000000000003,62.494,55.764000000000003,60.765000000000001,44.174999999999997],"text":["gdpPercap:   786.1134<br />lifeExp: 38.43800<br />pop:  14880372<br />continent: Asia","gdpPercap: 19340.1020<br />lifeExp: 65.59300<br />pop:    297410<br />continent: Asia","gdpPercap:   659.8772<br />lifeExp: 46.92300<br />pop:  80428306<br />continent: Asia","gdpPercap:   524.9722<br />lifeExp: 31.22000<br />pop:   6978607<br />continent: Asia","gdpPercap:   741.2375<br />lifeExp: 63.96736<br />pop: 943455000<br />continent: Asia","gdpPercap: 11186.1413<br />lifeExp: 73.60000<br />pop:   4583700<br />continent: Asia","gdpPercap:   813.3373<br />lifeExp: 54.20800<br />pop: 634000000<br />continent: Asia","gdpPercap:  1382.7021<br />lifeExp: 52.70200<br />pop: 136725000<br />continent: Asia","gdpPercap: 11888.5951<br />lifeExp: 57.70200<br />pop:  35480679<br />continent: Asia","gdpPercap: 14688.2351<br />lifeExp: 60.41300<br />pop:  11882916<br />continent: Asia","gdpPercap: 13306.6192<br />lifeExp: 73.06000<br />pop:   3495918<br />continent: Asia","gdpPercap: 16610.3770<br />lifeExp: 75.38000<br />pop: 113872473<br />continent: Asia","gdpPercap:  2852.3516<br />lifeExp: 61.13400<br />pop:   1937652<br />continent: Asia","gdpPercap:  4106.3012<br />lifeExp: 67.15900<br />pop:  16325320<br />continent: Asia","gdpPercap:  4657.2210<br />lifeExp: 64.76600<br />pop:  36436000<br />continent: Asia","gdpPercap: 59265.4771<br />lifeExp: 69.34300<br />pop:   1140357<br />continent: Asia","gdpPercap:  8659.6968<br />lifeExp: 66.09900<br />pop:   3115787<br />continent: Asia","gdpPercap:  3827.9216<br />lifeExp: 65.25600<br />pop:  12845381<br />continent: Asia","gdpPercap:  1647.5117<br />lifeExp: 55.49100<br />pop:   1528000<br />continent: Asia","gdpPercap:   371.0000<br />lifeExp: 56.05900<br />pop:  31528087<br />continent: Asia","gdpPercap:   694.1124<br />lifeExp: 46.74800<br />pop:  13933198<br />continent: Asia","gdpPercap: 11848.3439<br />lifeExp: 57.36700<br />pop:   1004533<br />continent: Asia","gdpPercap:  1175.9212<br />lifeExp: 54.04300<br />pop:  78152686<br />continent: Asia","gdpPercap:  2373.2043<br />lifeExp: 60.06000<br />pop:  46850962<br />continent: Asia","gdpPercap: 34167.7626<br />lifeExp: 58.69000<br />pop:   8128505<br />continent: Asia","gdpPercap: 11210.0895<br />lifeExp: 70.79500<br />pop:   2325300<br />continent: Asia","gdpPercap:  1348.7757<br />lifeExp: 65.94900<br />pop:  14116836<br />continent: Asia","gdpPercap:  3195.4846<br />lifeExp: 61.19500<br />pop:   7932503<br />continent: Asia","gdpPercap:  5596.5198<br />lifeExp: 70.59000<br />pop:  16785196<br />continent: Asia","gdpPercap:  1961.2246<br />lifeExp: 62.49400<br />pop:  44148285<br />continent: Asia","gdpPercap:   713.5371<br />lifeExp: 55.76400<br />pop:  50533506<br />continent: Asia","gdpPercap:  3682.8315<br />lifeExp: 60.76500<br />pop:   1261091<br />continent: Asia","gdpPercap:  1829.7652<br />lifeExp: 44.17500<br />pop:   8403990<br />continent: Asia"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,191,125,1)","opacity":1,"size":[6.1460110940192649,4.0618923368030773,9.2944181192737929,5.3947546237792743,22.677165354330711,5.0842667623005777,19.270611332336372,10.971582163389774,7.439948312810027,5.892707572845433,4.9155533082844034,10.342652961876032,4.6165810638400373,6.2588909214274597,7.4890188516278959,4.4110615732865925,4.8503461314566483,5.9772262992771665,4.5181621343131457,7.2295116202131977,6.0689997444985844,4.3689491281513559,9.2157542835905932,7.987021510377736,5.5243091899664361,4.7000742918742686,6.0841318076423097,5.5029150891563878,6.2937536773921225,7.8636286967314257,8.1495465827417597,4.4462660218669603,5.5539430462659025],"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)"}},"hoveron":"points","name":"Asia","legendgroup":"Asia","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[3533.0039099999999,19749.422299999998,19117.974480000001,3528.4813049999998,7612.2404379999998,11305.38517,14800.160620000001,20422.9015,15605.42283,18292.635139999999,20512.92123,14195.52428,11674.837369999999,19654.962469999999,11150.98113,14255.98475,9595.9299050000009,21209.0592,23311.349389999999,9508.1414540000005,10172.485720000001,9356.3972400000002,12980.66956,10922.66404,15277.03017,13236.92117,18855.725210000001,26982.290519999999,4269.1223259999997,17428.748459999999],"y":[68.930000000000007,72.170000000000002,72.799999999999997,69.859999999999999,70.810000000000002,70.640000000000001,70.709999999999994,74.689999999999998,72.519999999999996,73.829999999999998,72.5,73.680000000000007,69.950000000000003,76.109999999999999,72.030000000000001,73.480000000000004,73.066000000000003,75.239999999999995,75.370000000000005,70.670000000000002,70.409999999999997,69.459999999999994,70.299999999999997,70.450000000000003,70.969999999999999,74.390000000000001,75.439999999999998,75.390000000000001,59.506999999999998,72.760000000000005],"text":["gdpPercap:  3533.0039<br />lifeExp: 68.93000<br />pop:   2509048<br />continent: Europe","gdpPercap: 19749.4223<br />lifeExp: 72.17000<br />pop:   7568430<br />continent: Europe","gdpPercap: 19117.9745<br />lifeExp: 72.80000<br />pop:   9821800<br />continent: Europe","gdpPercap:  3528.4813<br />lifeExp: 69.86000<br />pop:   4086000<br />continent: Europe","gdpPercap:  7612.2404<br />lifeExp: 70.81000<br />pop:   8797022<br />continent: Europe","gdpPercap: 11305.3852<br />lifeExp: 70.64000<br />pop:   4318673<br />continent: Europe","gdpPercap: 14800.1606<br />lifeExp: 70.71000<br />pop:  10161915<br />continent: Europe","gdpPercap: 20422.9015<br />lifeExp: 74.69000<br />pop:   5088419<br />continent: Europe","gdpPercap: 15605.4228<br />lifeExp: 72.52000<br />pop:   4738902<br />continent: Europe","gdpPercap: 18292.6351<br />lifeExp: 73.83000<br />pop:  53165019<br />continent: Europe","gdpPercap: 20512.9212<br />lifeExp: 72.50000<br />pop:  78160773<br />continent: Europe","gdpPercap: 14195.5243<br />lifeExp: 73.68000<br />pop:   9308479<br />continent: Europe","gdpPercap: 11674.8374<br />lifeExp: 69.95000<br />pop:  10637171<br />continent: Europe","gdpPercap: 19654.9625<br />lifeExp: 76.11000<br />pop:    221823<br />continent: Europe","gdpPercap: 11150.9811<br />lifeExp: 72.03000<br />pop:   3271900<br />continent: Europe","gdpPercap: 14255.9847<br />lifeExp: 73.48000<br />pop:  56059245<br />continent: Europe","gdpPercap:  9595.9299<br />lifeExp: 73.06600<br />pop:    560073<br />continent: Europe","gdpPercap: 21209.0592<br />lifeExp: 75.24000<br />pop:  13852989<br />continent: Europe","gdpPercap: 23311.3494<br />lifeExp: 75.37000<br />pop:   4043205<br />continent: Europe","gdpPercap:  9508.1415<br />lifeExp: 70.67000<br />pop:  34621254<br />continent: Europe","gdpPercap: 10172.4857<br />lifeExp: 70.41000<br />pop:   9662600<br />continent: Europe","gdpPercap:  9356.3972<br />lifeExp: 69.46000<br />pop:  21658597<br />continent: Europe","gdpPercap: 12980.6696<br />lifeExp: 70.30000<br />pop:   8686367<br />continent: Europe","gdpPercap: 10922.6640<br />lifeExp: 70.45000<br />pop:   4827803<br />continent: Europe","gdpPercap: 15277.0302<br />lifeExp: 70.97000<br />pop:   1746919<br />continent: Europe","gdpPercap: 13236.9212<br />lifeExp: 74.39000<br />pop:  36439000<br />continent: Europe","gdpPercap: 18855.7252<br />lifeExp: 75.44000<br />pop:   8251648<br />continent: Europe","gdpPercap: 26982.2905<br />lifeExp: 75.39000<br />pop:   6316424<br />continent: Europe","gdpPercap:  4269.1223<br />lifeExp: 59.50700<br />pop:  42404033<br />continent: Europe","gdpPercap: 17428.7485<br />lifeExp: 72.76000<br />pop:  56179000<br />continent: Europe"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,176,246,1)","opacity":1,"size":[4.7371108627436556,5.4624539967397796,5.6992346573008055,5.0099484113596366,5.5953844370680521,5.0452352579055839,5.7324814770855621,5.1555400627128218,5.1065910593112758,8.2620770264897949,9.2160358510397877,5.6479367634492927,5.7780123695870129,4.0056154033362104,4.8775942362925928,8.3826662287215168,4.20280449359801,6.0623589222766583,5.0033474121167716,7.3952345234778321,5.683473125015408,6.6371846004767061,5.5838132163055763,5.1192110385773928,4.5722789940267674,7.4891719257402096,5.5376173904755444,5.3151977719393271,7.7819742430269558,8.3875878851989754],"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)"}},"hoveron":"points","name":"Europe","legendgroup":"Europe","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18334.197510000002,16233.717699999999],"y":[73.489999999999995,72.219999999999999],"text":["gdpPercap: 18334.1975<br />lifeExp: 73.49000<br />pop:  14074100<br />continent: Oceania","gdpPercap: 16233.7177<br />lifeExp: 72.22000<br />pop:   3164900<br />continent: Oceania"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(231,107,243,1)","opacity":1,"size":[6.0806191775182112,4.8589925159085103],"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)"}},"hoveron":"points","name":"Oceania","legendgroup":"Oceania","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":26.228310502283104,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-2573.7238570000004,62210.200997],"tickmode":"array","ticktext":["0","20000","40000","60000"],"tickvals":[0,20000,40000,60000],"categoryorder":"array","categoryarray":["0","20000","40000","60000"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"gdpPercap","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[28.9755,78.354500000000002],"tickmode":"array","ticktext":["30","40","50","60","70"],"tickvals":[30,40,50,60,70],"categoryorder":"array","categoryarray":["30","40","50","60","70"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"lifeExp","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176002,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"pop<br />continent","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"328c19fa2f5d":{"x":{},"y":{},"size":{},"colour":{},"type":"scatter"}},"cur_data":"328c19fa2f5d","visdat":{"328c19fa2f5d":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="testing-a-table" class="level2">
+<h2 class="anchored" data-anchor-id="testing-a-table">Testing a table</h2>
+<p>Here, we test a table.</p>
+<table class="table">
+<caption>A table</caption>
+<thead>
+<tr class="header">
+<th>Col1</th>
+<th>Col2</th>
+<th>Col3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A</strong></td>
+<td>V</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>B</strong></td>
+<td>V</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>C</strong></td>
+<td>V</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="testing-a-tabset" class="level2">
+<h2 class="anchored" data-anchor-id="testing-a-tabset">Testing a ‘tabset’</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Horse</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Cat</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Dog</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Fish</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The horse is known for neighing</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>The cat is known for meowing</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>The dog is known for barking</p>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>The fish is known for… gulping?</p>
+</div>
+</div>
+</div>
+</section>
+<section id="testing-a-bullet-list" class="level2">
+<h2 class="anchored" data-anchor-id="testing-a-bullet-list">Testing a bullet list</h2>
+<ul>
+<li><p>Bullet 1</p></li>
+<li><p>Bullet 2</p></li>
+</ul>
+</section>
+<section id="testing-a-numbered-list" class="level2">
+<h2 class="anchored" data-anchor-id="testing-a-numbered-list">Testing a numbered list</h2>
+<ol type="1">
+<li><p>Cat</p></li>
+<li><p>Dog</p></li>
+<li><p>Horse</p></li>
+</ol>
+</section>
+<section id="testing-math" class="level2">
+<h2 class="anchored" data-anchor-id="testing-math">Testing math</h2>
+<p>Math code (per LaTeX).</p>
+<p><span class="math display">\[
+X = \sum_{x=0}^{\infty}(\frac{x}{2})
+\]</span></p>
+</section>
+<section id="testing-a-call-out" class="level2">
+<h2 class="anchored" data-anchor-id="testing-a-call-out">Testing a call out</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Called out!!!</p>
+</div>
+</div>
+</section>
+<section id="a-picture" class="level2">
+<h2 class="anchored" data-anchor-id="a-picture">A picture</h2>
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="images/Net%20Present%20Valu.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">A Bad Christmas Joke</figcaption>
+</figure>
+</div>
+</section>
+<section id="onward" class="level2">
+<h2 class="anchored" data-anchor-id="onward">Onward!!!</h2>
+<p>We can also indent videos.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="back-to-the-start-within-report-navigation" class="level2">
+<h2 class="anchored" data-anchor-id="back-to-the-start-within-report-navigation">Back to the start (within report navigation)</h2>
+<p>See: <a href="#testing-math">Testing math</a></p>
+<p>Finally, <a href="https://quarto.org/docs/authoring/markdown-basics.html">Here’s</a> a link to learn more (it’s in a weird box thingo???</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
